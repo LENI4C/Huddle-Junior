@@ -1,0 +1,82 @@
+/*
+### Headings
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --paleCyan: hsl(193, 100%, 96%);
+    --darkCyan: hsl(192, 100%, 9%);
+    --grayishBlue: hsl(208, 11%, 55%);
+}
+
+
+.topSection {
+    background-color: var(--paleCyan);
+    padding: 1.3em;
+    text-align: center;
+    background-image: url('images/bg-hero-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position:center; */
+    background-blend-mode: soft-light;
+    /* background-blend-mode: multiply; */
+}
+
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.header img { 
+    width: 10em;
+}
+
+.header span {
+    --grayishBlue: hsla(208, 11%, 55%, .4);
+    background-color: white;
+    padding: .3em 1em;
+    border-radius: 1.3em;
+    box-shadow: 3px 3px 10px var(--grayishBlue);
+    font-weight: 700;
+}
+
+.topText *{
+    font-size: 1.5em;
+    margin-bottom: .7em;
+}
+
+.topText h1 {
+    font-size: 2.5em;
+    line-height: 1.6;
+}
+
+.freeLink {
+    text-decoration: none;
+    color: white;
+    background-color: var(--pink);
+    font-weight: 700;
+    padding: 1em 2.5em;
+    display: inline-block;
+    margin: 1.8em 0 3.4em;
+    border-radius: 1.4em;
+    box-shadow: 4px 4px 8px rgb(240, 171, 184);
+}
+
+.top img {
+    margin-bottom: 5.5em;
+}
