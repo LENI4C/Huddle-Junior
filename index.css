@@ -22,17 +22,18 @@
     --grayishBlue: hsl(208, 11%, 55%);
 }
 
+body {
+    font-size: calc(1em + 1vw);
+}
 
 .topSection {
     background-color: var(--paleCyan);
-    padding: 1.3em;
+    padding: .5em;
     text-align: center;
     background-image: url('images/bg-hero-mobile.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position:center; */
-    background-blend-mode: soft-light;
-    /* background-blend-mode: multiply; */
+    margin-bottom: 7em;
 }
 
 .header { 
@@ -78,5 +79,38 @@
 }
 
 .top img {
-    margin-bottom: 5.5em;
+    margin-bottom: 4em;
+}
+
+.middle, .bottom {
+    max-width: 90vw;
+    margin: auto;
+}
+
+.mid {
+    margin-bottom: 5em;
+    padding: 2em;
+    border-radius: 1.5em;
+    box-shadow: -2px 3px 6px rgba(31, 30, 30, 0.2),
+    0 -3px 6px rgba(31, 30, 30, 0.1);
+    text-align: center;
+}
+
+.mid h3 {
+    font-size: 1.7em;
+    margin: 2.8em 0 1.4em;
+}
+
+.bottom {
+    border-radius: 1.5em;
+    box-shadow: -2px 3px 6px rgba(31, 30, 30, 0.2),
+    0 -3px 6px rgba(31, 30, 30, 0.1);
+    text-align: center;
+    padding-top: 3.4em;
+}
+
+footer {
+    padding: 2em;
+    background-color: var(--darkCyan);
+    color: white;
 }
